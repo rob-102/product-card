@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #515076;
+}
+
+.image-in-cards {
+  width: 290px;
+  height: 245px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.skin-type {
+  color: #A5A3B9;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78pxx;
+  margin: 0;
+  margin-top: 220px;
+  text-align: center;
+}
+
+.products-list {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+
+.card {
+  width: 340px;
+  height: 573px;
+  background: #5150761A;
+  margin-top: 110px;
+  margin-left: 85px;
+  margin-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.structure li {
+  margin-bottom: 5px;
+}
+
+.structure {
+  padding: 12px;
+  margin: 0;
+}
+
+.price {
+  font-size: 20px;
+  padding-left: 170px;
+}
+
+.product-name, .price-text {
+  font-size: 20px;
+}
