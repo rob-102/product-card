@@ -96,7 +96,20 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+}
+
+.buttons button{
+  font-size: 20px;
   margin: 30px;
+  padding: 10;
+  border-radius: 5px;
+}
+
+#add-to-basket {
+  font-size: 20px;
+  margin: 30px;
+  padding: 10;
+  border-radius: 5px;
 }
 
 .background-button-in-basket {
