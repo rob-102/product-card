@@ -29,7 +29,7 @@ body {
   line-height: 24px;
   font-size: 12px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -49,7 +49,6 @@ body {
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
-
 }
 
 .card {
@@ -73,6 +72,7 @@ body {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .card__structure-text {
@@ -85,6 +85,33 @@ body {
 }
 
 .card__product-name {
+  font-size: 20px;
+  line-height: 27px;
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.buttons button{
+  font-size: 20px;
+  margin: 30px;
+  padding: 10;
+  border-radius: 5px;
+}
+
+#add-to-basket {
+  font-size: 20px;
+  margin: 30px;
+  padding: 10;
+  border-radius: 5px;
+}
+
+.background-button-in-basket {
+  background-color: #00c451;
 }
