@@ -1,20 +1,20 @@
 //вывод погоды в городе
 function showTemperatureInCity (city,temperature) {
   console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`)
-};
+}
 showTemperatureInCity ('Лондоне', 18);
 
 //скорость света
 const LIGHT_SPEED = 299792458;
-function whatIsSpeed(speed) {
+function checkSpeed(speed) {
 if (speed > LIGHT_SPEED) {
   console.log('Сверхсветовая скорость')
 } else if (speed < LIGHT_SPEED) {
   console.log('Субсветовая скорость')
 } else if (speed === LIGHT_SPEED) {
   console.log('Скорость света')
-}};
-whatIsSpeed(7856736785);
+}}
+checkSpeed(7856736785);
 
 //покупка
 const product = "Увлажняющий мусс";
@@ -25,7 +25,7 @@ if (userMoney >= productPrice) {
   console.log(`${product} приобретён. Спасибо за покупку`)
 } else if (userMoney < productPrice) { 
   console.log(`Вам не хватает ${productPrice-userMoney} рублей, пополните баланс`)
-}};
+}}
 buyProductOnUserMoney(2200);
 buyProductOnUserMoney(5000);
 
@@ -34,10 +34,9 @@ const password = 1234;
 function checkPassword(enterPassword) {
   if (enterPassword === password) {
     console.log("Пароль введен верно")
-  }
-  else {
+  } else { 
     console.log("Пароль введен не верно!")
-  }};
+  }}
 checkPassword(1234);
 checkPassword(6464);
 
