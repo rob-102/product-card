@@ -18,7 +18,6 @@ function checkSpeed(speed) {
 checkSpeed(7856736785);
 
 //покупка
-
 const product = "Увлажняющий мусс";
 const productPrice = 2750;
 
@@ -34,8 +33,8 @@ buyProductOnUserMoney(5500);
 
 //придумать функцию
 const password = 1234;
-function checkPassword(enterPassword) {
-  if (enterPassword === password) {
+function checkPassword(enteredPassword) {
+  if (enteredPassword === password) {
     console.log("Пароль введен верно")
   } else { 
     console.log("Пароль введен не верно!")
