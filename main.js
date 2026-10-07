@@ -34,8 +34,8 @@ const outputLogButton = document.querySelector('#output-console-log');
 
 outputLogButton.addEventListener('click', () => outputConsoleLog('заканчиается зд 6.5'))
 function outputConsoleLog(message) {
-  alert('дз 6.5 выполнен без ошибок');
-  console.log(message);
+  alert('дз 6.5 выполнен без ошибок')
+  console.log(message)
 }
 
 //6.6 вывод консоль лог по наведению мыши.
@@ -44,7 +44,7 @@ const outputLogMouseOverTitle = document.querySelector('.title');
 
 outputLogMouseOverTitle.addEventListener('mouseover', () => outputConsoleLogTitle(outputLogMouseOverTitle.textContent))
 function outputConsoleLogTitle(message) {
-  console.log(message);
+  console.log(message)
 }
 
 //6.7 изменение цвета кнопки "добавить в корзину" по нажатию и обратно
