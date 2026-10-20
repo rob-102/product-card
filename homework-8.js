@@ -13,23 +13,22 @@ const userData = {
 const carData = {
   brand: "Mitsubishi",
   model: "Rvr",
-  yearRelease: 1993,
+  releaseYear: 1993,
   color: "green",
-  transmission: "Automatic",
-  //maxSpeed: 119
+  transmission: "Automatic"
 }
 
-carData.owner = userData.name;
+carData.owner = userData;
 console.log(carData)
 
 //8.5 Функция проверяет, есть ли в объекте свойство "максимальная скорость"
-function chackMaxSpeed() {
+function checkMaxSpeed() {
   if (!('maxSpeed' in carData)) {
     carData.maxSpeed = 120;
   }
 }
 
-chackMaxSpeed(carData);
+checkMaxSpeed(carData);
 
 //8.6 Написать функцию, которая получает первым аргументом — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
 function showProperty(obj, key ) {
@@ -40,54 +39,52 @@ showProperty(carData, 'model')
 showProperty(userData, 'city')
 
 //8.7 Создать массив, который содержит названия продуктов (просто строки)
-const productName = ['Увлажняющий мусс','Увлажняющая маска','Гель для умывания','Подарочный набор','Подарочный набор №5']
+const productNames = ['Увлажняющий мусс','Увлажняющая маска','Гель для умывания','Подарочный набор','Подарочный набор №5']
 
 //8.8 
-const movieDataSpiderMan = [
-  { name:'Человек-паук', yearRelease: 2002, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук 2', yearRelease: 2004, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук 3: Враг в отражении', yearRelease: 2007, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
-  { name:'Новый Человек-паук', yearRelease: 2012, Director: 'Марк Уэбб', Genre: 'фантастика, боевик, приключения'},
-  { name:'Новый Человек-паук: Высокое напряжение»', yearRelease: 2014, Director: 'Марк Уэбб', Genre: 'фантастика, боевик, приключения'},
+const SpiderManDataMovie = [
+  { name:'Человек-паук', releaseYear: 2002, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук 2', releaseYear: 2004, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук 3: Враг в отражении', releaseYear: 2007, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
+  { name:'Новый Человек-паук', releaseYear: 2012, director: 'Марк Уэбб', genre: 'фантастика, боевик, приключения'},
+  { name:'Новый Человек-паук: Высокое напряжение»', releaseYear: 2014, director: 'Марк Уэбб', genre: 'фантастика, боевик, приключения'},
 ]
-movieDataSpiderMan.push (
-  { name:'Первый мститель: Противостояние ', yearRelease: 2016, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик'},
-  { name:'Человек-паук: Возвращение домой', yearRelease: 2017, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Мстители: Война бесконечности', yearRelease: 2018, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик, приключения'},
-  { name:'Мстители: Финал', yearRelease: 2019, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Вдали от дома', yearRelease: 2019, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Нет пути домой', yearRelease: 2021, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Новый день', yearRelease: 2026, Director: 'Дестин Дэниел Креттон', Genre: 'фантастика, боевик, приключения'}
+SpiderManDataMovie.push (
+  { name:'Первый мститель: Противостояние ', releaseYear: 2016, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик'},
+  { name:'Человек-паук: Возвращение домой', releaseYear: 2017, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Мстители: Война бесконечности', releaseYear: 2018, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик, приключения'},
+  { name:'Мстители: Финал', releaseYear: 2019, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Вдали от дома', releaseYear: 2019, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Нет пути домой', releaseYear: 2021, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Новый день', releaseYear: 2026, director: 'Дестин Дэниел Креттон', genre: 'фантастика, боевик, приключения'}
 )
-//console.log(movieDataSpiderMan)
+//console.log(SpiderManDataMovie)
 
 //8.9
-const movieDataSpiderManTobeyMaguire = [
-  { name:'Человек-паук', yearRelease: 2002, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук 2', yearRelease: 2004, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук 3: Враг в отражении', yearRelease: 2007, Director: 'Сэм Рэйми', Genre: 'фантастика, боевик, приключения'},
+const TobeyMaguireSpiderManDataMovie = [
+  { name:'Человек-паук', releaseYear: 2002, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук 2', releaseYear: 2004, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук 3: Враг в отражении', releaseYear: 2007, director: 'Сэм Рэйми', genre: 'фантастика, боевик, приключения'},
 ]
-const movieDataSpiderManAndrewGarfield = [
-  { name:'Новый Человек-паук', yearRelease: 2012, Director: 'Марк Уэбб', Genre: 'фантастика, боевик, приключения'},
-  { name:'Новый Человек-паук: Высокое напряжение»', yearRelease: 2014, Director: 'Марк Уэбб', Genre: 'фантастика, боевик, приключения'},
+const GarfieldSpiderManDataMovie = [
+  { name:'Новый Человек-паук', releaseYear: 2012, director: 'Марк Уэбб', genre: 'фантастика, боевик, приключения'},
+  { name:'Новый Человек-паук: Высокое напряжение»', releaseYear: 2014, director: 'Марк Уэбб', genre: 'фантастика, боевик, приключения'},
 ]
-const movieDataSpiderManTomHolland = [
-  { name:'Первый мститель: Противостояние', yearRelease: 2016, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик'},
-  { name:'Человек-паук: Возвращение домой', yearRelease: 2017, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Мстители: Война бесконечности', yearRelease: 2018, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик, приключения'},
-  { name:'Мстители: Финал', yearRelease: 2019, Director: 'Энтони Руссо, Джо Руссо', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Вдали от дома', yearRelease: 2019, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Нет пути домой', yearRelease: 2021, Director: 'Джон Уоттс', Genre: 'фантастика, боевик, приключения'},
-  { name:'Человек-паук: Новый день', yearRelease: 2026, Director: 'Дестин Дэниел Креттон', Genre: 'фантастика, боевик, приключения'},
+const TomHollandSpiderManDataMovie = [
+  { name:'Первый мститель: Противостояние', releaseYear: 2016, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик'},
+  { name:'Человек-паук: Возвращение домой', releaseYear: 2017, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Мстители: Война бесконечности', releaseYear: 2018, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик, приключения'},
+  { name:'Мстители: Финал', releaseYear: 2019, director: 'Энтони Руссо, Джо Руссо', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Вдали от дома', releaseYear: 2019, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Нет пути домой', releaseYear: 2021, director: 'Джон Уоттс', genre: 'фантастика, боевик, приключения'},
+  { name:'Человек-паук: Новый день', releaseYear: 2026, director: 'Дестин Дэниел Креттон', genre: 'фантастика, боевик, приключения'},
 ]
-const movieDataAllSpiderMan = [ ...movieDataSpiderManTobeyMaguire, ...movieDataSpiderManAndrewGarfield, ...movieDataSpiderManTomHolland]
-//console.log(movieDataAllSpiderMan)
+const allSpiderManDataMovie = [ ...TobeyMaguireSpiderManDataMovie, ...GarfieldSpiderManDataMovie, ...TomHollandSpiderManDataMovie]
+//console.log(allSpiderManDataMovie)
 
 //8.10
-//function realspider() movieDataAllSpiderMan.map.has('Сэм Рэйми') => Array.push(feature: realspider)
-
-const PushRealSpider = movieDataAllSpiderMan.map(function(obj) {
-  obj.realSpider = obj.Director === 'Сэм Рэйми';
+const updateRealSpider = allSpiderManDataMovie.map(function(obj) {
+  obj.realSpider = obj.director === 'Сэм Рэйми';
   return(obj);
 })
-console.log(PushRealSpider)
+console.log(updateRealSpider)
