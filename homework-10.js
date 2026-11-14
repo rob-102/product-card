@@ -21,7 +21,6 @@ const getCardAmound = () => {
   } else { 
     return inputNumber
 }}
-//getCardAmound()
 
 //10.4 По аналогии из лекции — создать и реализовать шаблон для продуктовых карточек.
 
@@ -47,7 +46,6 @@ cardClone.querySelector('.card__structure').innerHTML = `
 `;
 cardClone.querySelector('.price').textContent = card.price;
 productList.appendChild(cardClone)
-})
-}
+})}
 
 showCard(productsData.slice(0, getCardAmound()));
