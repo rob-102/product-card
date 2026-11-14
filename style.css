@@ -61,11 +61,18 @@ body {
 .card__structure li {
   margin-bottom: 5px;
 }
+.card__structure ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 0;
+}
 
 .card__structure {
   padding-left: 12px;
   margin-bottom: 25px;
   margin-top: 5px;
+  white-space: pre-line;
 }
 
 .card__product-price {
